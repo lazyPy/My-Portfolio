@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav id="navbar-scrollspy" class="navbar sticky-top bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.jpg" alt="" width="30" height="30" class="d-inline-block rounded-circle">
+                JANO
+            </a>
+            <ul class="nav nav-pills" style="margin-right: 15rem;">
+                <li class="nav-item">
+                    <a class="nav-link" href="#homePage">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workPage">WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactPage">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutPage">ABOUT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <div id="homePage" class="row mt-5">
+            <div class="col-4 mx-auto mt-5">
+                <h1>Hi, I'm Jano</h1>
+                <h6>Junior Backend Developer</h6>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptates saepe? Reprehenderit commodi, suscipit ipsa praesentium totam blanditiis non architecto!</small>
+                <button class="btn btn-sm btn-outline-primary d-block mt-2">Get Started!</button>
+            </div>
+            
+            <div class="col-4 mx-auto">
+                <img src="images/banner.svg" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <div id="workPage" style="margin-top: 150px;">
+            <h2 class="text-center">WORK</h2>
+
+            <div class="card-group mx-auto w-75">
+                <div class="card">
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend Developer</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Django Developer</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/300/200" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Database Developer</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-center mt-5">Projects</h4>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://picsum.photos/300/100" class="d-block mx-auto w-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/300/100" class="d-block mx-auto w-50" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://picsum.photos/300/100" class="d-block mx-auto w-50" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactPage" style="margin-top: 150px;">
+            <h2 class="text-center my-3">Get in touch!</h2>
+            <p class="text-center">Have a questions? Contact us.</p>
+            <div class="mx-auto w-25">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="John Doe">
+                    <label for="floatingInput">Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 150px"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+                <div class="d-grid mx-auto col-6 my-2">
+                    <button class="btn btn-primary d-grid">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="aboutPage" style="margin-top: 150px;">
+            <h2 class="text-center my-3">Who Am I?</h2>
+            <p class="mx-auto w-50 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum fugit assumenda aut deserunt quasi reiciendis nobis corrupti quibusdam mollitia distinctio officiis repellendus architecto suscipit, eius necessitatibus! Facere quod quasi quisquam molestias esse veritatis ea provident doloribus placeat, autem suscipit iusto exercitationem sit nisi rerum a repellendus fuga. Id, velit!</p>
+            <div class="mx-auto w-25 text-center mt-5">
+                <img src="images/logo.jpg" alt="" class="img-fluid rounded-circle" style="width: 140px;">
+                <h5>Janodin Patundog</h5>
+                <small class="text-muted" style="margin-left: 0.7rem;">Junior Backend Developer</small>
+                <button class="btn btn-sm btn-outline-primary rounded-pill d-block mx-auto mt-2">Chat me!</button>
+            </div>
+        </div>
+        
+        <footer class="bg-light text-dark text-center mt-5">
+            <small class="pt-2">Follow me</small>
+            <div class="row justify-content-center">
+                <div class="col-1 text-center">
+                    <i class="bi bi-facebook" style="font-size: 1.2rem;"></i>
+                </div>
+                <div class="col-1 text-center">
+                    <i class="bi bi-instagram" style="font-size: 1.2rem;"></i>
+                </div>
+                <div class="col-1 text-center">
+                    <i class="bi bi-github" style="font-size: 1.2rem;"></i>
+                </div>
+            </div>
+            <small class="text-muted my-2">Copyright @2022</small>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
